@@ -1,0 +1,2 @@
+Heap Memory allows us to create memory independent of the lifecycle of a function.
+
