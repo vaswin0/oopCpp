@@ -18,8 +18,13 @@ int main() {
 	//foo(c); // copy constructor invocation as c should be copied to foo's stack frame from main's	
 	
 
-	std::cout << "\n calling bar, returning obj from a fn\n" << std::endl;
-	Cube c2 = bar();
+//	std::cout << "\n calling bar, returning obj from a fn\n" << std::endl;
+	//Cube c2 = bar();
+
+	Cube c;
+	Cube myCube;
+	
+	myCube = c;
 
 	return 0;
 

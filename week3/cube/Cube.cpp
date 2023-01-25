@@ -12,6 +12,13 @@ namespace polygon {
 	   length_ =  obj.length_ ;
 	   std::cout << "Copy constructor invoked!" << std::endl;
 }
+
+	Cube & Cube::operator=(const Cube & obj) {
+		length_ = obj.length_;
+		std::cout << "assignment operator invoked!" << std::endl;
+		return *this;
+}
+		
 		
 
 	double Cube::getVolume() {
