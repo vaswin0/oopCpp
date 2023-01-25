@@ -13,9 +13,9 @@ Cube bar() {
 
 int main() {
 
-	std::cout << "\n calling foo, passing obj as a param\n" << std::endl;
-	Cube c; // this invokes the defacult ctor
-	foo(c); // copy constructor invocation as c should be copied to foo's stack frame from main's	
+	//std::cout << "\n calling foo, passing obj as a param\n" << std::endl;
+	//Cube c; // this invokes the defacult ctor
+	//foo(c); // copy constructor invocation as c should be copied to foo's stack frame from main's	
 	
 
 	std::cout << "\n calling bar, returning obj from a fn\n" << std::endl;
