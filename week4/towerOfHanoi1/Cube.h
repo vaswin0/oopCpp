@@ -2,9 +2,9 @@
 #include <string>
 
 
-namespace polygon{
 
-	class Cube {
+
+class Cube {
 		public:
 			Cube(float, std::string);
 		//private:
@@ -14,7 +14,7 @@ namespace polygon{
 
 	};
 
-};
+
 		
 	
 	

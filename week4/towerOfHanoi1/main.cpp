@@ -1,6 +1,6 @@
 #include<iostream>
 #include "Cube.h"
-using polygon::Cube;
+//using polygon::Cube;
 
 #include <string>
 
