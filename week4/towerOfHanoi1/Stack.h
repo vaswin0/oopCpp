@@ -1,9 +1,10 @@
 #pragma once
 #include<string>
 #include "Cube.h"
+#include<vector>
 
 class Stack {
 	public:
-		Stack();
+		//Stack();
 		std::vector<Cube> stack;
 };
