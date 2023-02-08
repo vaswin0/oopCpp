@@ -7,6 +7,8 @@ class Stack {
 	public:
 		//Stack();
 		std::vector<Cube> stack;
-		void move(Stack, Stack);
+		void add(Cube a);
+		void remove(Cube a);
+
 	
 };
