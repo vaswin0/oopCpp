@@ -1,16 +1,16 @@
 #pragma once
 
-#include<Stack.h>
+#include "Stack.h"
 
 class Game{
 	
 	public:
 		Game();
-		Stack::stack a;
-		Stack::stack b;
-		Stack::stack c;
+		Stack a;
+		Stack b;
+		Stack c;
 
-		void toh();
+		//void toh();
 
 };
 	
