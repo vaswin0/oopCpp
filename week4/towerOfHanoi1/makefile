@@ -2,10 +2,11 @@ CC = g++
 CFLAGS = -Wall -g
 
 
-main: main.o Cube.o Stack.o
-	$(CC) $(CFALGS) -o main main.o Cube.o Stack.o
-main.o: main.cpp Cube.h Stack.h
+main: main.o Game.o Stack.o Cube.o 
+	$(CC) $(CFALGS) -o main main.o Game.o Stack.o Cube.o 
+main.o: main.cpp Game.h Stack.h Cube.h 
 	$(CC) $(CFLAGS) -c main.cpp
 
-Stack.o: Stack.h
+Game.o: Game.h Stack.h
+Stack.o: Stack.h Cube.h
 Cube.o: Cube.h
