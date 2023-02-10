@@ -1,13 +1,13 @@
 #include "Cube.h"
-#include <string>
+// #include <string>
 
 
 
 //namespace polygon {
 
-	Cube::Cube(float length, std::string color){
+	Cube::Cube(float length){ //, std::string color){
 		length_ = length;
-		color_ = color;
+//		color_ = color;
 	}
 
 

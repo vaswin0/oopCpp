@@ -6,10 +6,10 @@
 
 class Cube {
 		public:
-			Cube(float, std::string);
+			Cube(float); //, std::string);
 		//private:
 			double length_;
-			std::string color_;
+			//std::string color_;
 
 
 	};
