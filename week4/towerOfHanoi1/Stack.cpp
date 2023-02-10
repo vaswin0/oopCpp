@@ -2,6 +2,12 @@
 #include "Stack.h"
 
 
+
+Stack::Stack(){
+}
+
+
+
 void Stack::add(Cube a){
 	
 	stack.push_back(a);
