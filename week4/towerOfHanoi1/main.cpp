@@ -35,13 +35,6 @@ int main() {
 
 Game g;
 
-cout<<g.a.stack.size()<<endl;
-
-
-
-
-
-
-
+cout<<g.stacks[0].stack.size()<<endl;
 return 0;
 }
