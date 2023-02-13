@@ -9,32 +9,13 @@
 using namespace std;
 
 int main() {
-//std::string r = "red";
-//Cube c(10);//, r);
-//std::cout<<c.length_<<std::endl;
-//std::cout<<c.color_ << std::endl;
-//Stack s;
-//s.stack.push_back(c);
-//std::cout<<s.stack[0].length_<<std::endl;
-
-//cout<<s.stack.size()<<endl;
-
-
-//Cube d(30);//  , r);
-
-//s.add(d);
-
-
-
-//cout<<s.stack.size()<<endl; 
-
-//s.remove(d);
-
-//cout<<s.stack.size()<<endl; 
-
 
 Game g;
-
+g.stacks[0].stack.push_back(Cube(10));
 cout<<g.stacks[0].stack.size()<<endl;
+cout<<g.checkTopCube(0)<<endl;
+
+cout<<g.stacks[0].stack[0].length_<<endl;
+
 return 0;
 }
