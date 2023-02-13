@@ -3,11 +3,14 @@
 
 Game::Game(){
 
-//	Stack s;
+Stack a ;//= Stack();
+stacks.push_back(a);//stacks[0].add(Cube(10));
 
-	
-	a.stack.push_back(Cube(3));
-	//a.stack.push_back(Cube(2));
-	//a.stack.push_back(Cube(1));
 
 }
+
+		
+		
+void _legalMove(unsigned i, unsigned k) {
+	
+	
