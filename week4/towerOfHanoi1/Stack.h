@@ -7,8 +7,7 @@ class Stack {
 	public:
 		Stack();
 		std::vector<Cube> stack;
-		void add(Cube );
-		void remove(Cube );
+		void showStack();
 
 	
 };
