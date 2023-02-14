@@ -10,9 +10,9 @@ class Game{
 		std::vector<Stack> stacks;
 		
 		int checkTopCube(int);
-		void _legalMove(unsigned, unsigned);
+		void _legalMove(float, float);
 
-		//void toh();
+		void toh();
 
 };
 	
