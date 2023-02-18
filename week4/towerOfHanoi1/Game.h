@@ -12,6 +12,8 @@ class Game{
 		int checkTopCube(int);
 		void _legalMove(float, float);
 
+		//void showStacks();
+
 		void toh();
 
 };

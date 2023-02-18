@@ -67,6 +67,7 @@ void Game::_legalMove(float i, float j) {
 	
 }
 
+
 	
 
 void Game::toh(){
