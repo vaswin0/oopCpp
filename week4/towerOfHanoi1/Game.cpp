@@ -32,7 +32,12 @@ int Game::checkTopCube(int k){
 
 
 	
-
+std::ostream& operator<<(std::ostream & os, const Game & game) {
+  for (unsigned i = 0; i < game.stacks.size(); i++) {
+    os << "Stack[" << i << "]: " << game.stacks[i];
+  }
+  return os;
+}
 		
 		
 void Game::_legalMove(float i, float j) {
@@ -51,28 +56,20 @@ void Game::_legalMove(float i, float j) {
 		stacks[i].stack.push_back(Cube(len_j));
 		stacks[j].stack.pop_back();
 		
-		cout<<"moved from" << j << "to" << i << endl;
+		//cout<<"moved from" << j << "to" << i << endl;
 }
 
 	if (len_j > len_i && sizei != 0) {
 		stacks[j].stack.push_back(Cube(len_i));
 		stacks[i].stack.pop_back();
 		
-		cout<<"moved from" << i << "to" << j << endl;	
+		//cout<<"moved from" << i << "to" << j << endl;	
 		}
-
-	else cout<<"not a legal move"<< endl;
-
-
-	
 }
-
-
-	
-
 void Game::toh(){
 
 	while(stacks[2].stack.size() != 4){
+	cout<<*this<<endl;
 
 	_legalMove(0,1);
 	_legalMove(0,2);
@@ -82,6 +79,28 @@ void Game::toh(){
 
 }
 }
+
+/*
+void Game::_move(
+	unsigned start, unsigned end, Stack & source, 
+	Stack & target, Stack & spare, unsigned depth) {
+
+	cout << "Planning (depth = " << depth++ << "): Move [" << 
+
+	if (start == end) {
+		_moveCube(source, target);
+		cout << *this << endl;
+}
+
+else {
+	
+	_move(start + 1, end , source, spare, target, depth);
+	_move(start , start , source, target, spare, depth);
+	_move(start + 1, end , spare, target,source, depth);
+
+}*/
+
+
 
 
 
