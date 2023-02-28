@@ -10,4 +10,7 @@
 //		color_ = color;
 	}
 
+  double Cube::getLength() const {
+    return length_;
+  }
 

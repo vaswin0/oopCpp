@@ -7,9 +7,12 @@
 class Cube {
 		public:
 			Cube(float); //, std::string);
-		//private:
-			double length_;
+		
 			//std::string color_;
+			double getLength() const;
+
+		private:
+			double length_;
 
 
 	};
