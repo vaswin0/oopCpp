@@ -8,10 +8,14 @@
 class Stack {
 	public:
 		Stack();
-		std::vector<Cube> stack;
+		Cube & peekTop() ;
 		unsigned size() const;
+		void push_back(const Cube & cube);
+		void pop_back();
+    	Cube removeTop();
 		
 		friend std::ostream& operator<<(std::ostream & os, const Stack & s);
 
-	
+ 	private:
+		std::vector<Cube> stack_;	
 };
