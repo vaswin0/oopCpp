@@ -11,24 +11,17 @@ using namespace std;
 int main() {
 
 Game g;
-/*g.stacks[0].stack.push_back(Cube(5));
-g.stacks[1].stack.push_back(Cube(10));
-//cout<<g.stacks[1].stack.size()<<endl;
-//cout<<g.checkTopCube(1)<<endl;
 
-cout<<g.stacks[0].stack.size()<<endl;
-cout<<g.stacks[1].stack.size()<<endl;
-g._legalMove(0,1);
-cout<<g.stacks[0].stack.size()<<endl;
-cout<<g.stacks[1].stack.size()<<endl;
-*/
-g.toh();
+  std::cout << "Initial game state: " << std::endl;
+  std::cout << g << std::endl;
 
-for(int i=0; i < (int) g.stacks[2].stack.size() ; ++i){
+  //g.solve(); //recursive
+  g.toh();  //iterative
 
-	cout<<g.stacks[2].stack[i].length_;//<<endl;
+  std::cout << "Final game state: " << std::endl;
+  std::cout << g << std::endl;
 
-}
+ 
 
 return 0;
 }
